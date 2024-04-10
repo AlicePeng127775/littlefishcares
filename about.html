@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Little Fish Cares</title>
+		<meta charset="utf-8">
+        <meta name="author" content="Alice Guo">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="./css/global.css">
+		<link rel="stylesheet" href="./css/about.css">
+		<link rel="icon" type="image/x-icon" href="./img/logo/logoIcon.png">
+		<link href="http://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <!-- icon -->
+		<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+		<!-- aos Animate On Scroll Library -->
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<!-- font family -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@700&family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
+	</head>
+    <body>
+		<header>
+			<div class="logo">
+				<img src="./img/logo/logo.png" alt="Logo" width="330px" height="120px" >
+			</div>
+                
+			<nav class="navigation">
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="about.html">ABOUT</a></li>
+					<li class="dropdown_1"><a href="adopt.html">ADOPT</a>
+                        <div class="dropdown_content_1">
+							<a href="adopt.html?type=all">All Pets</a><br>
+							<a href="adopt.html?type=dog">Dog</a><br>
+							<a href="adopt.html?type=cat">Cat</a><br>
+						</div>
+                    </li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                
+				</ul>
+			</nav>
+		
+		<div class="donate">
+            <button class="donateBtn">DONATE</button>
+        </div>
+
+		<input id="menu-toggle" type="checkbox" />
+		<label class='menu-button-container' for="menu-toggle">
+		<div class='menu-button'></div> </label>
+			
+			<ul class="menu">
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="about.html">ABOUT</a></li>
+				<li><a href="adopt.html">ADOPT</a></li>
+				<li><a href="contact.html">CONTACT</a></li>
+			</ul>		
+		</header>
+
+		<main>
+			<div class="topImg"> 
+				<h1 data-aos="fade-up">About Us</h1>
+			</div>
+			<div class="brandStoryContainer" data-aos="fade-up">
+				<div class="brandStoryImg"><img src="./img/brandStoryImg.png" alt="An illustration with a lot of cats and dogs"></div>
+				<div class="brandStoryText">
+					<h3>THE ORIGIN OF OUR NAME</h3>
+					<h1>Read A Story</h1>
+					<p>
+						On a morning after a storm, a man went for a walk by the sea.
+						 As he strolled along the shore, he noticed that in the puddles
+						 on the beach, there were many little fish that had been swept
+						  ashore by last night’s storm. They were trapped in these puddles,
+						   unable to return to the sea just a stone’s throw away. 
+						   There might have been hundreds or even thousands of 
+						   trapped fish. In no time, the water in these puddles
+						    would be sucked up by the sand and evaporated 
+							by the sun, and these fish would die.<br><br>
+
+						The man kept walking. Suddenly, he noticed a little boy ahead of him, 
+						walking very slowly, constantly bending down next to each puddle – 
+						he was picking up the little fish from the puddles and forcefully 
+						throwing them back into the sea. The man stopped and watched 
+						this boy, as he saved the lives of these fish.<br><br>
+
+						Finally, the man couldn’t resist approaching him: 
+						“hey boy, there are hundreds, thousands of fish 
+						in these puddles. You can’t save them all.”<br> <br>
+
+						” I know,” the boy replied without looking up.<br><br>
+						“Oh? Then why do you keep throwing? Who cares?” the man said,<br><br>
+					</p>
+					<h2>“The little fish cares!”</h2>
+					<p>The boy replied as he picked up another fish and threw it into the sea.<br> <br>	</p>
+					<h2>“This one cares, and this one, and this one, and this one…”<br><br>
+						“Missing kittens care, abandoned puppies care, injured animals care, they care.”</h2>
+				</div>
+			</div>
+
+			<div class="philosophyContainer">
+				<div class="philosophyText">
+					<h3>WHAT WE DO</h3>
+					<h1>Our Philosophy</h1>
+					<p>
+						Every stray animal is a “little fish”
+						We hope to save them.
+						to provide them with medical services.
+						help them find loving homes.
+						So that they can “return to the sea”
+					</p>
+					<button class="adoptBtn" onclick="location.href='adopt.html'">Adopt Today</button>
+				</div>
+				<div class="philosophyImg">
+					<img src="./img/Philosophy1.jpg" alt="A woman holding a kitten."  data-aos="fade-right">
+					<img src="./img/Philosophy2.jpg" alt="A pair of twin men each holding their own puppy."  data-aos="fade-left">
+				</div>
+			</div>
+
+			<div class="teamContainer">
+				<h3>GET IN TOUCH</h3>
+				<h1>Meet our Team</h1>
+				<div class="teamMember" data-aos="fade-up">
+					<div class="member">
+						<img src="./img/Team/Jonathan.jpg" alt="Male veterinarian examining kitten">
+						<h2>Jonathan Smith</h2>
+						<h3>VETERINARIAN</h3>
+						<p>Dr. Jonathan has been in practice for over 10 years and has treated 100,000+ animals, and his specialty is treating fractures in animals.</p>
+					</div>
+					<div class="member">
+						<img src="./img/Team/Martha.jpg" alt="Female Veterinarian examining kitten">
+						<h2>Martha Doe</h2>
+						<h3>VETERINARIAN</h3>
+						<p>Dr. Martha, a veterinary graduate from the University of Canada, specializes in the treatment of feline abdomen and feline distemper.</p>
+					</div>
+					<div class="member">
+						<img src="./img/Team/Dora.jpg" alt="Retired female veterinarian holds puppy">
+						<h2>Dora Martinez</h2>
+						<h3>VETERINARIAN</h3>
+						<p>Dr. Dora, retired from 40 years of practice, now volunteers at our shelter caring for injured animals.</p>
+					</div>
+				</div>
+			</div>
+			<div class="faqContainer">
+				<div class="faqLeft">
+				<h3>QUESTIONS</h3>
+				<h2>FAQ</h2>
+					<div class="faq">
+						<div class="question accordion">
+							
+							<h3>When can I pick my pet up following adoption?</h3>
+								
+							<svg width="15" height="10" viewBox="0 0 42 25">
+								<path d="M3 3L21 21L39 3" stroke="black" stroke-width="7" storke-linecap="round" fill="none"/>
+							</svg>
+						</div>
+			
+						<div class="answer">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>	
+						</div>
+					</div>
+					<div class="faq">
+						<div class="question accordion">
+							
+							<h3>When can I pick my pet up following adoption?</h3>
+								
+							<svg width="15" height="10" viewBox="0 0 42 25">
+								<path d="M3 3L21 21L39 3" stroke="black" stroke-width="7" storke-linecap="round" fill="none"/>
+							</svg>
+						</div>
+			
+						<div class="answer">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>	
+						</div>
+					</div>
+					<div class="faq">
+						<div class="question accordion">
+							
+							<h3>When can I pick my pet up following adoption?</h3>
+								
+							<svg width="15" height="10" viewBox="0 0 42 25">
+								<path d="M3 3L21 21L39 3" stroke="black" stroke-width="7" storke-linecap="round" fill="none"/>
+							</svg>
+						</div>
+			
+						<div class="answer">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>	
+						</div>
+					</div>
+					<div class="faq">
+						<div class="question accordion">
+							
+							<h3>When can I pick my pet up following adoption?</h3>
+								
+							<svg width="15" height="10" viewBox="0 0 42 25">
+								<path d="M3 3L21 21L39 3" stroke="black" stroke-width="7" storke-linecap="round" fill="none"/>
+							</svg>
+						</div>
+			
+						<div class="answer">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>	
+						</div>
+					</div>
+					<div class="faq">
+						<div class="question accordion">
+							
+							<h3>When can I pick my pet up following adoption?</h3>
+								
+							<svg width="15" height="10" viewBox="0 0 42 25">
+								<path d="M3 3L21 21L39 3" stroke="black" stroke-width="7" storke-linecap="round" fill="none"/>
+							</svg>
+						</div>
+			
+						<div class="answer">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>	
+						</div>
+					</div>
+				</div>
+				<div class="faqRight">
+					<h2>Cant find your Question?</h2>
+					<button class="contactBtn"  onclick="location.href='contact.html'">Contact Us</button>
+					<img class="faqRightImg" src="./img/faqImg.png" alt="dog" data-aos="fade-left">
+				</div>
+			</div>
+		</main>
+
+		<footer>
+            <div class="wavy_line"></div>
+			<button type="button" id="BackTop" class="backTopBtn"><ion-icon name="chevron-up-outline"></ion-icon></button>
+			<div class="footerContainer">
+				<div class="logo2"> <img src="./img/logo/logo2.png" alt="logo"></div>
+				<div class="contactInfo">
+					<h2>Contact Us</h2>
+					<p>
+						236-666-6666 <br>
+						littlefishcares@gmail.com<br>
+					</p>
+					<div class="Social_Media_icon">
+								<ion-icon name="logo-instagram" class="icon"></ion-icon>
+								<ion-icon name="logo-facebook" class="icon"></ion-icon>
+								<ion-icon name="logo-twitter" class="icon"></ion-icon>
+                	</div>  							
+				</div>
+				<div class="openingHours">
+					<h2>Opening Hours</h2>
+					<p>
+						MON-FRI 09:00 – 19:00<br>
+						SAT-SUN 10:00 – 14:00<br><br>
+						PUBLIC HOLIDAY CLOSURE
+					</p>
+				</div>
+				<div class="newsletter">
+					<h2>Newsletter</h2>
+					<div class="newsletterInputContainer">
+						<form>
+							<input type="email" class="newsletterInput" placeholder="a" id="emailAddress">
+							<label for="emailAddress" class="newsletterLabel" >Email</label>
+							<input type="submit" value="Subscribe" class="newsletterSubmitBtn"/>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="copyright"> &copy;LITTLEFISHCARES</div>
+		</footer>
+		<script src="./js/global.js"></script>
+    </body>
+</html>

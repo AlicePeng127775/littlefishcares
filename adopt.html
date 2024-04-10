@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Little Fish Cares</title>
+		<meta charset="utf-8">
+        <meta name="author" content="Alice Guo">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="./css/global.css">
+		<link rel="stylesheet" href="./css/adopt.css">
+		<link rel="icon" type="image/x-icon" href="./img/logo/logoIcon.png">
+		<link href="http://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <!-- icon -->
+		<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+		<!-- aos Animate On Scroll Library -->
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<!-- Fancy Box -- Like Light Box -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+		<!-- font family -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@700&family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
+	</head>
+    <body>
+		<header>
+			<div class="logo">
+				<img src="./img/logo/logo.png" alt="Logo" width="330px" height="120px" >
+			</div>
+                
+			<nav class="navigation">
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="about.html">ABOUT</a></li>
+					<li class="dropdown_1"><a href="adopt.html">ADOPT</a>
+                        <div class="dropdown_content_1">
+							<a href="adopt.html?type=all">All Pets</a><br>
+							<a href="adopt.html?type=dog">Dog</a><br>
+							<a href="adopt.html?type=cat">Cat</a><br>
+						</div>
+                    </li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                
+				</ul>
+			</nav>
+		
+		<div class="donate">
+            <button class="donateBtn">DONATE</button>
+        </div>
+
+		<input id="menu-toggle" type="checkbox" />
+		<label class='menu-button-container' for="menu-toggle">
+		<div class='menu-button'></div> </label>
+			
+			<ul class="menu">
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="about.html">ABOUT</a></li>
+				<li><a href="adopt.html">ADOPT</a></li>
+				<li><a href="contact.html">CONTACT</a></li>
+			</ul>
+		
+		</header>
+
+		<main>
+			<div class="topImg"> 
+				<h1 data-aos="fade-up">Adopt a Pet</h1>
+			</div>
+
+			<div class="adoptContainer">
+				<h3>ADOPT</h3>
+				<h1>Find a New Friend</h1>
+				<div class="filterOptions"> 
+					<button class="allPetBtn">ALL PET</button>
+					<button class="dogBtn">DOG</button>
+					<button class="catBtn">CAT</button>
+				</div>
+				<div class="adoptPet" data-aos="fade-up">
+					<div class="pet dog">
+						<img src="./img/pet/pet1.jpg" alt="Saint Bernard with black and white face and brown body."/>
+    					<span class="span1"></span>
+						<ion-icon name="paw"></ion-icon>
+						<h2>Oreo</h2>
+						<p>
+							Oreo is a boy, now 2 years old. 
+							he has a front foot injury but has 
+							recovered under our care and loves 
+							to lie on the grass in the sun.
+						</p>
+						<button class="adoptBtn" >Adopt Me</button>
+					</div>
+					<div class="pet dog">
+						<img src="./img/pet/pet2.jpg" alt="A little orange and white dog."/>
+    					<span class="span1"></span>
+						<ion-icon name="paw"></ion-icon>
+						<h2>Master</h2>
+						<p>
+							master is a little boy, 
+							now 8 months old, he is very energetic, 
+							hope to find a family that can take him on an adventure
+						</p>
+						<button class="adoptBtn" >Adopt Me</button>
+					</div>
+					<div class="pet cat">
+						<img src="./img/pet/pet3.jpg" alt="A tri-colored tiger spotted fat cat"/>
+    					<span class="span1"></span>
+						<ion-icon name="paw"></ion-icon>
+						<h2>Pipo</h2>
+						<p>
+							Pipo is 2 years old, he is a boy, 
+							he is more afraid of life, 
+							like to stay high to see the scenery,
+							 but if he let you touch his head 
+							 that he likes you very much
+						</p>
+						<button class="adoptBtn" >Adopt Me</button>
+					</div>
+					<div class="pet dog">
+						<img src="./img/pet/pet4.jpg" alt="A yellow, curly-haired puppy, lying on the grass."/>
+    					<span class="span1"></span>
+						<ion-icon name="paw"></ion-icon>
+						<h2>Jonas</h2>
+						<p>
+							Jonas is a lively and cheerful boy, 
+							4 years old, likes to catch Frisbee, 
+							He is very friendly to people and other small animals
+						</p>
+						<button class="adoptBtn" >Adopt Me</button>
+					</div>
+					<div class="pet cat">
+						<img src="./img/pet/pet5.jpg" alt="Two milky white kittens "/>
+    					<span class="span1"></span>
+						<ion-icon name="paw"></ion-icon>
+						<h2>Muli & Tuli</h2>
+						<p>
+							Muli and Tuli are sisters, 
+							now 2 months old, they love 
+							to cuddle together, and we hope 
+							to adopt them together if possible.
+						</p>
+						<button class="adoptBtn" >Adopt Me</button>
+					</div>
+					<div class="pet dog">
+						<img src="./img/pet/pet6.jpg" alt="A pale yellow Labrador with a donut on his head."/>
+    					<span class="span1"></span>
+						<ion-icon name="paw"></ion-icon>
+						<h2>Lukas</h2>
+						<p>
+							Lukas is a 1 year old boy who was 
+							brought in with a left foot injury 
+							and is a bit timid. With the care 
+							of our volunteers, he has now recovered.
+						</p>
+						<button class="adoptBtn" >Adopt Me</button>
+					</div>
+					<div class="pet dog">
+						<img src="./img/pet/pet7.jpg" alt="Two yellowish puppies in the grass.">
+    					<span class="span1"></span>
+						<ion-icon name="paw"></ion-icon>
+						<h2>Manu & Lila</h2>
+						<p>
+							Manu and lila are a pair of sisters, 
+							they are already 5 months old, 
+							Manu likes adventure, 
+							lila likes to stay at home, 
+							hoping that they can not be separated
+						</p>
+						<button class="adoptBtn" >Adopt Me</button>
+					</div>
+					<div class="pet cat">
+						<img src="./img/pet/pet8.jpg" alt="A gray tiger spotted cat"/>
+    					<span class="span1"></span>
+						<ion-icon name="paw"></ion-icon>
+						<h2>Jonas</h2>
+						<p>
+							jonas is a boy have yellow eyes, 
+							he is just 1 year old, his favorite 
+							flavor is canned chicken, 
+							he is very shy and very gentle.
+						</p>
+						<button class="adoptBtn" >Adopt Me</button>
+					</div>
+					<div class="pet dog">
+						<img src="./img/pet/pet9.jpg" alt="A black Chihuahua with a little gold on the tail and a white belly."/>
+   						<span class="span1"></span>
+						<ion-icon name="paw"></ion-icon>
+						<h2>Petit</h2>
+						<p>
+							Petit is a little girl, now 1 year old, 
+							she is very quiet, 
+							her favorite game is throwing the ball, 
+							she only gets excited when she plays with the ball.
+						</p>
+						<button class="adoptBtn" >Adopt Me</button>
+					</div>
+				</div>
+			</div>
+			<div class="newHomeContainer">
+				<h1>We've found a new home!</h1>
+				<div id="gallery">
+					<a href="./img/adoptfamily/1.jpg" data-caption="Max x Sarah's Family" class="newFamily" alt="A white dog and a woman looking at a camera in a forest." >
+					  <img src="./img/adoptfamily/1.jpg" alt="A white dog and a woman looking at a camera in a forest." />
+					</a>
+					<a href="./img/adoptfamily/2.jpg" data-caption=" Charlie x Emily's Family" class="newFamily"  alt="A woman goes to the doctor with a white cat.">
+						<img src="./img/adoptfamily/2.jpg"  alt="A woman goes to the doctor with a white cat."/>
+					</a>
+					<a href="./img/adoptfamily/3.jpg" data-caption="Lucy x John's Family" class="newFamily" alt="A yellow and white cat and a woman sitting on the sofa.">
+						<img src="./img/adoptfamily/3.jpg"  alt="A yellow and white cat and a woman sitting on the sofa."/>
+					</a>
+					<a href="./img/adoptfamily/4.jpg" data-caption="Milo x David's Family" class="newFamily" alt="A yellow dog sitting on the couch with David's family, mom, dad and son.">
+						<img src="./img/adoptfamily/4.jpg" alt="A yellow dog sitting on the couch with David's family, mom, dad and son."/>
+					</a>
+					<a href="./img/adoptfamily/5.jpg" data-caption="Coco x Lily's Family" class="newFamily" alt="Dog lying on grass with short-haired woman">
+						  <img src="./img/adoptfamily/5.jpg" alt="Dog lying on grass with short-haired woman" />
+					</a>
+					<a href="./img/adoptfamily/6.jpg" data-caption="Bailey x Grace's Family" class="newFamily" alt="A girl with a white dog lying on the bed">
+						  <img src="./img/adoptfamily/6.jpg" alt="A girl with a white dog lying on the bed"/>
+					</a>
+					<a href="./img/adoptfamily/7.jpg" data-caption="Luna x James's Family" class="newFamily"  alt="A little boy with a blue cat and short-legged Corky sitting on the couch.">
+						<img src="./img/adoptfamily/7.jpg" alt="A little boy with a blue cat and short-legged Corky sitting on the couch."/>
+					  </a>
+					  <a href="./img/adoptfamily/8.jpg" data-caption="Daisy X Anna's Family" class="newFamily" alt="A woman holding a hairless cat.">
+						  <img src="./img/adoptfamily/8.jpg" alt="A woman holding a hairless cat."/>
+					  </a>			
+				  </div>
+			</div>
+		</main>
+
+		<footer>
+			<div class="wavy_line"></div>
+			<button type="button" id="BackTop" class="backTopBtn"><ion-icon name="chevron-up-outline"></ion-icon></button>
+			<div class="footerContainer">
+				<div class="logo2"> <img src="./img/logo/logo2.png" alt="logo"></div>
+				<div class="contactInfo">
+					<h2>Contact Us</h2>
+					<p>
+						236-666-6666 <br>
+						littlefishcares@gmail.com<br>
+					</p>
+					<div class="Social_Media_icon">
+								<ion-icon name="logo-instagram" class="icon"></ion-icon>
+								<ion-icon name="logo-facebook" class="icon"></ion-icon>
+								<ion-icon name="logo-twitter" class="icon"></ion-icon>
+                	</div>  			
+				</div>
+				<div class="openingHours">
+					<h2>Opening Hours</h2>
+					<p>
+						MON-FRI 09:00 – 19:00<br>
+						SAT-SUN 10:00 – 14:00<br><br>
+						PUBLIC HOLIDAY CLOSURE
+					</p>
+				</div>
+				<div class="newsletter">
+					<h2>Newsletter</h2>
+					<div class="newsletterInputContainer">
+						<form>
+							<input type="email" class="newsletterInput" placeholder="a" id="emailAddress">
+							<label for="emailAddress" class="newsletterLabel" >Email</label>
+							<input type="submit" value="Subscribe" class="newsletterSubmitBtn"/>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="copyright"> &copy;LITTLEFISHCARES</div>
+		</footer>
+		<script src="./js/global.js"></script>
+			<!-- Fancy Box -- Like Light Box -->
+		<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+		<script>
+
+			//===============================//
+			//  newHome -- Fancy Box         //
+			//===============================//
+
+			//initialize
+			Fancybox.bind('#gallery a', {
+				groupAll: true,
+			});  
+		</script>
+    </body>
+</html>

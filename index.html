@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Little Fish Cares</title>
+		<meta charset="utf-8">
+        <meta name="author" content="Alice Guo">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="./css/global.css">
+		<link rel="stylesheet" href="./css/home.css">
+		<link rel="icon" type="image/x-icon" href="./img/logo/logoIcon.png">
+		<link href="http://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<!-- Bootstrap -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+		<!-- Jquery -->
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <!-- icon -->
+		<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+		<!-- aos Animate On Scroll Library -->
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<!-- Typer js -->
+		<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+		<!-- font family -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@700&family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
+
+	</head>
+    <body>
+		<header>
+			<div class="logo">
+				<img src="./img/logo/logo.png" alt="Logo" width="330px" height="120px" >
+			</div>
+                
+			<nav class="navigation">
+				<ul>
+					<li><a href="home.html">HOME</a></li>
+					<li><a href="about.html">ABOUT</a></li>
+					<li class="dropdown_1"><a href="adopt.html">ADOPT</a>
+						<div class="dropdown_content_1">
+							<a href="adopt.html?type=all">All Pets</a><br>
+							<a href="adopt.html?type=dog">Dog</a><br>
+							<a href="adopt.html?type=cat">Cat</a><br>
+						</div>
+                    </li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                
+				</ul>
+			</nav>
+		
+		<div class="donate">
+            <button class="donateBtn">DONATE</button>
+        </div>
+
+		<input id="menu-toggle" type="checkbox" />
+		<label class='menu-button-container' for="menu-toggle">
+		<div class='menu-button'></div> </label>
+			
+			<ul class="menu">
+				<li><a href="home.html">HOME</a></li>
+				<li><a href="about.html">ABOUT</a></li>
+				<li><a href="adopt.html">ADOPT</a></li>
+				<li><a href="contact.html">CONTACT</a></li>
+			</ul>
+		
+		</header>
+
+		<main>
+			<div class="bannerContainer">
+				<img class="bannerImg" alt="bannerimg"/>
+				<div class="bannerInfo" data-aos="fade-down">
+					<div>
+						<h2>Welcome to</h2>
+						<h1>Little Fish cares</h1>
+						<h3>Pet Adoption is  <span id="element"></span> </h3>
+						<p>
+							We are a company that rescues stray animals,
+	
+							become their transit station. A small story to tell you the origin of our name
+						</p>
+						
+						<button class="aboutBtn" onclick="location.href='about.html'">ABOUT US</button>
+					</div>
+					
+				</div>
+
+			</div>
+
+			<div class="donateContainer">
+				<div class="donateInfo">
+				<h1>Donate</h1>
+				<p>
+					If you are an animal lover
+					but for some reason you can’t bring your pet home
+					You can choose your favorite pet to donate.
+					We will update you regularly with photos and videos of your pet.<br> <br> <br>
+					
+					You can also choose to make a donation to our organization, 
+					which will be used for the restoration of the park, volunteers, etc.
+				</p>
+				<button class="donateBtn"  data-aos="fade-up">DONATE</button>
+				</div>
+				
+				<div class="donateImg">
+					<img src="./img/donateImg.jpg" alt="A veterinarian and a volunteer examining a dog.">
+				</div>
+			</div>
+
+			<div class="adoptContainer">
+				<h1>Adopt a Pet</h1>
+				<div class="adoptPet"  data-aos="fade-up">
+					<div class="pet">
+						<img src="./img/pet/pet4.jpg" alt="A yellow, curly-haired puppy, lying on the grass.">
+    					<span class="span1"></span>
+						<ion-icon name="paw"></ion-icon>
+						<h2>Jonas</h2>
+						<p>
+							Jonas is a lively and cheerful boy, 
+							4 years old, likes to catch Frisbee, 
+							He is very friendly to people and other small animals
+						</p>
+						<button class="adoptBtn" >Adopt Me</button>
+					</div>
+					<div class="pet">
+						<img src="./img/pet/pet5.jpg" alt="Two milky white kittens">
+   						<span class="span1"></span>
+						<ion-icon name="paw"></ion-icon>
+						<h2>Muli & Tuli</h2>
+						<p>
+							Muli and Tuli are sisters, 
+							now 2 months old, they love 
+							to cuddle together, and we hope 
+							to adopt them together if possible.
+						</p>
+						<button class="adoptBtn" >Adopt Me</button>
+					</div>
+					<div class="pet">
+						<img src="./img/pet/pet6.jpg" alt="A pale yellow Labrador with a donut on his head.">
+   						 <span class="span1"></span>
+						<ion-icon name="paw"></ion-icon>
+						<h2>Lukas</h2>
+						<p>
+							Lukas is a 1 year old boy who was 
+							brought in with a left foot injury 
+							and is a bit timid. With the care 
+							of our volunteers, he has now recovered.
+						</p>
+						<button class="adoptBtn" >Adopt Me</button>
+					</div>	
+				</div>
+				<button class="seeAllPetsBtn" onclick="location.href='adopt.html'">See All Pets</button>
+			</div>
+
+			<div class="adoptionStoriesContainer">
+				<h2>TESTIMONIALS</h2>
+				<h1>Adoption Stories</h1>
+				<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+					<div class="carousel-indicators">
+					  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+					  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+					  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+					</div>
+					<div class="carousel-inner">
+					  <div class="carousel-item active">
+						<p>
+							Annie decides to go to a pet shelter to find a puppy as a new member of her family. When she entered the shelter, she saw many cute puppies, but one in particular caught her attention, a yellow and white fluffy puppy.
+	
+							Annie was immediately impressed by the puppy's innocent eyes and cheerful personality, and she decided to adopt him. She named the dog "Kiki" and took him home with her.
+							
+							Kiki quickly adapted to her new family, and she and Annie became best friends. They walk, play, and care for each other. Annie gives Kiki a warm, safe home, and Kiki gives Annie a lot of love and joy.
+						</p>
+	
+						<div class="adoptFamilyImg"><img src="./img/adoptStory/family1.jpg" alt=" A woman holding a French Bulldog"></div>
+	
+						<p>Annie and Kiki 's Family</p>
+					  </div>
+					  <div class="carousel-item">
+						<p>
+							Jack is an adventurous little boy who wants to have a puppy to accompany him on his adventures. So, he goes to the pet shelter with his parents to look for a suitable partner.
+	
+							When Jack enters the shelter, he is attracted by a puppy with charming eyes and a furry appearance. This puppy is called "QQ" and she looks very lively and friendly.
+	
+							Jack knows that this is the companion he has always dreamed of, so he decides to adopt Qiaoqiao. Qiaoqiao becomes Jack's best friend and they embark on a fantasy adventure together. They explore the forest, climb mountains, play with water, and experience many wonderful moments together.
+						</p>
+	
+						<div class="adoptFamilyImg"><img src="./img/adoptStory/family2.jpg" alt="A poodle and Jack's family lying on a bed, mom, dad, and son."></div>
+	
+						<p>Jack and  QQ 's  Family</p>
+					  </div>
+					  <div class="carousel-item">
+						<p>
+							A kitten called "Coffee" was found in a deserted building. She was thin and frail, and looked very poor. Coffee was taken to a pet shelter and received medical care.
+	
+							The staff at the shelter cared for her and gave her love and care. Milk Tea gradually regained her health and became lively and happy. She demonstrated a strong vitality and resilience.
+	
+							One day, a young woman Lanin came to the foster home and was immediately impressed by Coffee's courage and perseverance. She decided to adopt Coffee and give her a warm, loving home.
+						</p>
+	
+						<div class="adoptFamilyImg"><img src="./img/adoptStory/family3.jpg" alt="A woman holding a coffee-colored dog."/></div>
+	
+						<p>Lanin and Coffee 's Family</p>
+					  </div>
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+					  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					  <span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+					  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+					  <span class="visually-hidden">Next</span>
+					</button>
+				  </div>
+			</div>
+
+			<div class="benefits">
+				<h1>Our Benefits</h1>
+				<div class="benefitsAll">
+					<div class="benefitsRight" data-aos="fade-right">
+						<div class="pros pros1">
+							<div class="prosIcon"><ion-icon name="home"></ion-icon></div>
+							<div class="prosText">
+								<h4>
+									A New Home</h4>
+								<p>We hope that adopted pets will no longer be abandoned, so we will also conduct some background checks on the adoptive families</p>
+							</div>
+						</div>
+						<div class="pros pros2">
+							<div class="prosIcon"><ion-icon name="shield-half"></ion-icon></div>
+							<div class="prosText">
+								<h4>Safe Enviroment</h4>
+								<p>We are located in the suburbs of Vancouver and have a very large area to provide a comfortable environment for stray animals.</p>
+							</div>
+						</div>
+					</div>
+					
+					<div class="benefitsMiddle"><img src="./img/benefitImg.jpg" alt="dog and cat"></div>
+
+					<div class="benefitsLeft" data-aos="fade-left">
+						<div class="pros pros3">
+							<div class="prosIcon"><ion-icon name="bandage"></ion-icon></div>
+							<div class="prosText">
+								<h4>Vaccinated</h4>
+								<p>All pets at our facility are spayed/neutered and vaccinated free of charge. Guarantee the health of your pet</p>
+							</div>
+						</div>
+						<div class="pros pros4">
+							<div class="prosIcon"><ion-icon name="medkit"></ion-icon></div>
+							<div class="prosText">
+								<h4>Healthy Pets</h4>
+								<p>Even if a pet has been adopted, you can contact us if you need any treatment in the future, and we have 30 partner pet hospitals that can help.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="adoptNb">
+				<div>
+					<span class="number count1">800</span>
+					<p>Pets Adopted</p>
+				 </div>
+				 <div>
+					<span class="number count2">34</span>
+					<p>Volunteers</p>
+				 </div>
+				 <div>
+					<span class="number count3">30</span>
+					<p>Cooperation Pet Hospitals</p>
+				 </div>
+
+			</div>
+		
+		</main>
+
+		<footer>
+			<div class="wavy_line"></div>
+			<button type="button" id="BackTop" class="backTopBtn"><ion-icon name="chevron-up-outline"></ion-icon></button>
+			<div class="footerContainer">
+				<div class="logo2"> <img src="./img/logo/logo2.png" alt="logo"></div>
+				<div class="contactInfo">
+					<h2>Contact Us</h2>
+					<p>
+						236-666-6666 <br>
+						littlefishcares@gmail.com<br>
+					</p>
+					<div class="Social_Media_icon">
+								<ion-icon name="logo-instagram" class="icon"></ion-icon>
+								<ion-icon name="logo-facebook" class="icon"></ion-icon>
+								<ion-icon name="logo-twitter" class="icon"></ion-icon>
+                	</div>  							
+				</div>
+				<div class="openingHours">
+					<h2>Opening Hours</h2>
+					<p>
+						MON-FRI 09:00 – 19:00<br>
+						SAT-SUN 10:00 – 14:00<br><br>
+						PUBLIC HOLIDAY CLOSURE
+					</p>
+				</div>
+		
+				<div class="newsletter">
+					<h2>Newsletter</h2>
+					<div class="newsletterInputContainer">
+						<form class="newsletterFrom">
+							<input type="email" class="newsletterInput" placeholder="a" id="emailAddress">
+							<label for="emailAddress" class="newsletterLabel" >Email</label>
+							<input type="submit" value="Subscribe" class="newsletterSubmitBtn"/>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="copyright"> &copy;LITTLEFISHCARES</div>
+		</footer>
+		<script src="./js/global.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+		<script>
+			// //===================================//
+			// //  Home page - banner Text typing   //
+			// //===================================//
+
+			var typed = new Typed('#element', {
+				strings: ['Saving a Life', 'an act of love','Pure joy','New friendship ' ],
+				typeSpeed: 100,
+				loop: true,
+				
+			});
+		</script>
+    </body>
+</html>

@@ -1,0 +1,440 @@
+
+/*-----------------------------------*\
+  Banner
+\*-----------------------------------*/
+
+.bannerContainer{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-repeat: no-repeat;
+    overflow: hidden;  
+}
+
+.bannerImg{
+    animation: scaleDraw 6s ease-in-out infinite;
+    width: 100%;
+    height: 70vh;
+}
+
+@keyframes scaleDraw { 
+    0%{
+        transform: scale(1); 
+        opacity: 0.8;
+    }
+    10%{
+        opacity: 1;
+    }
+    95%{
+        opacity: 1;
+        
+    }
+    100%{
+        transform: scale(1.1); 
+        opacity: 0.8;
+    }
+}
+
+.bannerInfo{
+    max-width: 600px;
+    height: 400px;
+    display: flex;
+    padding: 2%;
+    margin-right: 2%;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--pink);
+    border-top: 5px solid var(--hover);
+    border-bottom: 5px solid var(--hover);
+    border-radius: 10px;
+    z-index: 1;
+    position: absolute;
+}
+
+.bannerInfo  h3{
+    font-size: 1.5rem;
+}
+.typing{ 
+    width:200px;
+	white-space: nowrap;
+	overflow: hidden;
+    border-right: 2px solid transparent;
+    animation: blink-caret .75s step-end infinite;
+}
+
+
+@keyframes blink-caret {
+    from, to{ 
+        box-shadow: 1px 0 0 0 transparent;  
+    }
+    50%{
+        box-shadow: 1px 0 0 0;
+    }
+}
+
+.aboutBtn{
+    width: 150px;
+    height: 50px;
+    font-size: 1.2rem;
+    background-color: var(--button);
+    border-radius: 30px;
+    border: none;
+    color: white;
+    font-family: 'Baloo Chettan 2', sans-serif;
+}
+
+.aboutBtn:hover{
+    background-color: var(--hover);
+
+}
+
+
+/*-----------------------------------*\
+  Donate
+\*-----------------------------------*/
+
+.donateContainer{
+    width: 85%;
+    height: 600px;
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.donateInfo{
+    width: 40%;
+    height: 400px;
+}
+
+.donateInfo > .donateBtn{
+   margin-top: 40px;
+}
+
+.donateImg > img{
+    border-radius: 20px;
+    width: 600px;
+    height: auto;
+}
+
+/*-----------------------------------*\
+ Adopt
+\*-----------------------------------*/
+
+.adoptContainer{
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.adoptPet{
+    width: 90%;
+    margin: 100px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.pet{
+    margin-top: 20px;
+    width:350px;
+    height: 550px;
+    border-radius: 10px;
+    box-shadow:3px 3px 5px 6px #cccccc;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.pet > img {
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    z-index: 1;
+}
+
+.pet > ion-icon{
+    color: var(--darkPink);
+    font-size: 1.5rem;
+
+}
+.pet > p{
+    width: 90%;
+    margin:20px auto;
+}
+
+.pet:hover img{
+    animation: imgHover 1s ease-in-out ;
+}
+
+
+.pet:hover + .span1{
+    display: block;
+}
+
+
+@keyframes imgHover{
+    0%{
+        transform: scale(1, 1);
+       
+    }
+    100%{
+        transform: scale(1.1, 1.1);
+    }
+}
+
+
+.adoptBtn{
+    width: 100px;
+    height: 40px;
+    font-size: 1rem;
+    background-color: var(--button);
+    border-radius: 30px;
+    border: none;
+    color: white;
+    font-family: 'Baloo Chettan 2', sans-serif;
+}
+
+.adoptBtn:hover{
+    background-color: var(--hover);
+}
+
+.seeAllPetsBtn{
+    width: 200px;
+    height: 60px;
+    font-size: 1.2rem;
+    background-color: var(--backgroundColor);
+    border: 2px solid var(--hover);
+    border-radius: 30px;
+    color: var(--hover);
+    font-family: 'Baloo Chettan 2', sans-serif;
+}
+
+.seeAllPetsBtn:hover{
+    background-color: var(--hover);
+    color: white;
+}
+
+
+/*-----------------------------------*\
+ Adoption Stories
+\*-----------------------------------*/
+
+.adoptionStoriesContainer{
+    margin:100px auto ;
+    padding: 50px 0 50px 0;
+    width: 100%;
+    height: auto;
+    background-image: url(../img/banner/banner1.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.adoptionStoriesContainer > h1{
+    color: white;
+    font-size: 2.5rem;
+}
+
+.adoptionStoriesContainer > h2{
+    color: white;
+    font-size: 0.8rem;
+}
+
+#carouselExampleIndicators{
+    max-width: 1000px;
+    padding: 50px 0 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.carousel-item > p{
+    width: 70%;
+    color: white;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 1.2rem;
+}
+.adoptFamilyImg > img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid white;
+    margin: 20px auto;
+}
+
+.adoptFamilyImg{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*-----------------------------------*\
+ Our Benefits
+\*-----------------------------------*/
+
+.benefits > h1 {
+    margin-left:100px ;
+}
+
+.benefitsLeft{
+    overflow-y: hidden;
+}
+
+.benefitsRight{
+    overflow-y: hidden;
+}
+
+.benefitsAll{
+    width: 70%;
+    /* height: 600px; */
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.pros{
+    margin: 50px auto;
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.prosIcon > ion-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    font-size: 4rem;
+    color: var(--dark);
+    background-color: var(--pink);
+    align-items: center;
+    border: 10px solid var(--pink);
+    margin-right: 20px;
+}
+
+.prosText > p{
+    font-size: 1rem;
+}
+
+.prosText > h4{
+    font-size: 1.3rem;
+}
+
+.benefitsMiddle > img{
+    width: 300px;
+    height: 500px;
+
+}
+/*-----------------------------------*\
+ Adopt Number ++
+\*-----------------------------------*/
+
+.adoptNb{
+    background-image: url(../img/adoptNb.jpg);
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-attachment: fixed;
+    margin-bottom: 50px;
+}
+
+.adoptNb > div{
+    background-color: var(--dark);
+    width: 350px;
+    height: 180px;
+    border-radius: 20px;
+    color: white;
+    align-items: center;
+    text-align: center;
+}
+.adoptNb > div > p{
+    color: white;
+    font-size: 1.5rem;
+}
+
+.number{
+    font-size: 4rem;
+}
+
+
+
+@media (max-width: 768px) {
+   .donateImg > img{
+    width: 300px;
+    height: auto;
+   }
+   .adoptNb{
+    zoom:50%;
+   }
+
+   .benefitsMiddle{
+    display: none;
+}
+
+.benefitsAll{
+    zoom:60%;
+}
+   .adoptFamilyImg > img{
+    width: 100px;
+    height: 100px;
+   }
+
+}
+
+@media (max-width: 420px) {
+    .bannerInfo{
+        top:250px;
+        left:10px;
+    }
+    .donateContainer{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .donateInfo{
+        width: 90%;
+    }
+
+    .benefitsMiddle{
+        display: none;
+    }
+    .benefitsAll{
+        flex-direction: column;
+    }
+
+    .pros{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .prosIcon > ion-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .adoptNb{
+        flex-wrap: wrap;
+    }
+
+}
+
+
+
+
+
+
+

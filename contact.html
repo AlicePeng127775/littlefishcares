@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Little Fish Cares</title>
+		<meta charset="utf-8">
+        <meta name="author" content="Alice Guo">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="./css/global.css">
+		<link rel="stylesheet" href="./css/contact.css">
+		<link rel="icon" type="image/x-icon" href="./img/logo/logoIcon.png">
+		<link href="http://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <!-- icon -->
+		<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+		<!-- aos Animate On Scroll Library -->
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<!-- Leaflet Library -->
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+		integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+		crossorigin=""/>
+
+
+		<script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.10/index.global.min.js'></script>
+	
+		<!-- font family -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@700&family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
+	</head>
+    <body>
+		<header>
+			<div class="logo">
+				<img src="./img/logo/logo.png" alt="Logo" width="330px" height="120px" >
+			</div>
+                
+			<nav class="navigation">
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="about.html">ABOUT</a></li>
+					<li class="dropdown_1"><a href="adopt.html">ADOPT</a>
+                        <div class="dropdown_content_1">
+							<a href="adopt.html?type=all">All Pets</a><br>
+							<a href="adopt.html?type=dog">Dog</a><br>
+							<a href="adopt.html?type=cat">Cat</a><br>
+						</div>
+                    </li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                
+				</ul>
+			</nav>
+		
+		<div class="donate">
+            <button class="donateBtn">DONATE</button>
+        </div>
+
+		<input id="menu-toggle" type="checkbox" />
+		<label class='menu-button-container' for="menu-toggle">
+		<div class='menu-button'></div> </label>
+			
+			<ul class="menu">
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="about.html">ABOUT</a></li>
+				<li><a href="adopt.html">ADOPT</a></li>
+				<li><a href="contact.html">CONTACT</a></li>
+			</ul>
+		
+		</header>
+
+		<main>
+			<div class="topImg"> 
+				<h1 data-aos="fade-up">Contact Us</h1>
+			</div>
+
+			<div class="contactContainer">
+				<h3>CONTACT</h3>
+				<h1>Get in Touch</h1>
+				<div class="contactInof"  data-aos="fade-up" >
+					<div class="inof">
+						<h2>Location</h2>
+						<p>555 Seymour St, Vancouver, BC</p>
+					</div>
+					<div class="inof">
+						<h2>Our Hours</h2>
+						<p>
+							<span>MON-FRI</span> 09:00 – 19:00<br>
+							<span>SAT-SUN</span> 10:00 – 14:00
+						</p>
+					</div>
+					<div class="inof">
+						<h2>Contact Info</h2>
+						<p>
+							<span>Phone:</span> + 1-604-000-0000<br>
+							<span>Email:</span> littlefishcares@aliccccce.com			
+						</p>
+					</div>
+					<div class="inof">
+						<h2>Follow Us</h2>
+						<div>
+							<ion-icon name="logo-facebook" class="SMIcon"></ion-icon>
+							<ion-icon name="logo-instagram" class="SMIcon"></ion-icon>
+							<ion-icon name="logo-youtube" class="SMIcon"></ion-icon>
+							<ion-icon name="logo-twitter" class="SMIcon"></ion-icon>
+						</div>
+					</div>
+				</div>
+		
+				<div class="contactUs">
+						<div id="map"></div>
+						<div class="contactForm">
+						<form class="messageFrom">
+						  <h1 class="title">Sand Us Message</h1>
+
+						  <div class="messageInputContainer">
+							<input type="text" class="messageInput" placeholder="a" id="firstName">
+							<label for="firstName" class="messageLabel">First Name</label>
+						  </div>
+					
+						  <div class="messageInputContainer">
+							<input type="text" class="messageInput" placeholder="a" id="lastName">
+							<label for="lastName" class="messageLabel">Last Name</label>
+						  </div>
+					
+						  <div class="messageInputContainer">
+							<input type="text" class="messageInput" placeholder="a" id="emailAdd">
+							<label for="emailAdd" class="messageLabel">E-mail</label>
+						  </div>
+					
+						  <div class="messageInputContainer">
+							<input type="text" class="messageInput" placeholder="a" id="phone">
+							<label for="phone" class="messageLabel">Phone</label>
+						  </div>
+	
+						  <div class="messageInputContainer message">
+							<input type="text" class="messageInput messagetext" placeholder="a" id="Message">
+							<label for="Message" class="messageLabel">Message</label>
+						  </div>
+					
+						  <input type="submit" class="submitBtn" value="Submit">
+						</form>
+					  </div> 
+				</div>
+				
+			</div>
+		
+		</main>
+
+		<footer>
+			<div class="wavy_line"></div>
+			<button type="button" id="BackTop" class="backTopBtn"><ion-icon name="chevron-up-outline"></ion-icon></button>
+			<div class="footerContainer">
+				<div class="logo2"> <img src="./img/logo/logo2.png" alt="logo2"></div>
+				<div class="contactInfo">
+					<h2>Contact Us</h2>
+					<p>
+						236-666-6666 <br>
+						littlefishcares@gmail.com<br>
+					</p>
+					<div class="Social_Media_icon">
+								<ion-icon name="logo-instagram" class="icon"></ion-icon>
+								<ion-icon name="logo-facebook" class="icon"></ion-icon>
+								<ion-icon name="logo-twitter" class="icon"></ion-icon>
+                	</div>  		
+				</div>
+				<div class="openingHours">
+					<h2>Opening Hours</h2>
+					<p>
+						MON-FRI 09:00 – 19:00<br>
+						SAT-SUN 10:00 – 14:00<br><br>
+						PUBLIC HOLIDAY CLOSURE
+					</p>
+				</div>
+				<div class="newsletter">
+					<h2>Newsletter</h2>
+					<div class="newsletterInputContainer">
+						<form>
+							<input type="email" class="newsletterInput" placeholder="a" id="emailAddress">
+							<label for="emailAddress" class="newsletterLabel" >Email</label>
+							<input type="submit" value="Subscribe" class="newsletterSubmitBtn"/>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="copyright"> &copy;LITTLEFISHCARES</div>
+		</footer>
+		<script src="./js/global.js"></script>
+		<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+		integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+		crossorigin=""></script>
+		<script>
+
+			//===============================//
+			//  Interactive Maps             //
+			//===============================//
+
+			// Creating a Leaflet Map
+			var map = L.map('map').setView([49.2834546,-123.1178244], 13);
+
+			L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+				maxZoom: 19,
+				attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+			}).addTo(map);
+
+			var marker = L.marker([49.2834546,-123.1178244]).addTo(map);
+
+			marker.bindPopup("<b>Hello!</b><br> We are little fish cares.").openPopup();
+
+
+		</script>
+    </body>
+</html>
